@@ -47,8 +47,6 @@ function handleLogOut(state, payload) {
 
 // action creators
 export function logIn(user) {
-
-    console.log('in action login',user);
     return {
         type: LOG_IN,
         payload: {
