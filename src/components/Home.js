@@ -2,8 +2,7 @@ import React,{useEffect} from 'react';
 import Cart from '../containers/Cart';
 import ProductList from '../containers/ProductList';
 import { useHistory } from "react-router-dom";
-import NavBar from './NavBar';
-
+import NavigBar from './NavigBar/index';
 
 const Home = ( {user,logOut} ) =>{
 
@@ -22,17 +21,14 @@ const Home = ( {user,logOut} ) =>{
         }
         logOut(userOut);
         history.push("/login");
-
     }
 
     return (
         <div>
             <div className="row">
                 <div className="col-md-12">
-                    <h1>React+Redux Shopping Cart Example</h1>
-                    <h1>Bienvenido {user.username} + {user.role.role}</h1>
-                    <button onClick={handleClick}> Log Out</button>
-                    <NavBar items = {user.role.modules} />
+                    {/* <button onClick={handleClick}> Log Out</button> */}
+                    <NavigBar items = {user.role.modules} user = {user} onClick={handleClick}/>
                 </div>
             </div>
             <div className="row">

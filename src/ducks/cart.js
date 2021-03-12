@@ -94,3 +94,13 @@ export function getTotal(state, props) {
     total = (total * IMP_IVA) + total
     return total.toFixed(2);
 }
+
+export function getDetailProducts(state, props) {
+    let products = [];
+    state.cart.items.map((id) => {
+        const item = getProduct(state, { id });
+        products.push(item)
+    });
+    return products;
+   
+}

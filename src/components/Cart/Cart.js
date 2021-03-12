@@ -2,7 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import CartItem from './CartItem';
 
+import { useHistory } from "react-router-dom";
+
 const Cart = ({ items, total,subtotal, currency, removeFromCart,totalImp }) => {
+
+    const history = useHistory();
+
+    const handleCheckout = () => {
+        history.push("/resume");
+    }
+
     return (
         <div>
             <h3>Shopping Cart</h3>
@@ -23,7 +32,9 @@ const Cart = ({ items, total,subtotal, currency, removeFromCart,totalImp }) => {
                         <div className="cart__total">SubTotal: {subtotal} {currency}</div>
                         <div className="cart__total">Impuestos : {totalImp} {currency}</div>
                         <div className="cart__total">Total: {total} {currency}</div>
+                        <button className="checkout_Button btn btn-primary"  onClick = {handleCheckout} disabled={items.length === 0 ? "disabled" : ""}> CheckOut </button>
                     </div>
+
                 </div>
             </div>
         </div>

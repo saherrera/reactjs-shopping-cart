@@ -1,11 +1,55 @@
-.loginContainer {
-    width: 100%;
-    text-align: center;
-    margin: auto;
+.card{
+    background: #333;
+    width: 500px;
+    height: 400px;
+    margin-left: 390px;
+    margin-top: 100px;
+    transition-duration: 0.5s;
+    border-radius: 10px;
 }
 
-.formLogin {
-    font-family: sans-serif;
-    text-align: center;
-    justify-content: center;
+.loginTitle{
+    color: white;
+    font-size: 32px;
+    align-self: center;
+    margin-left: 150px;
+    position: absolute;
+    transition-duration: 0.5s;
+}
+
+.input-1{
+    background: white;
+    margin-top: 150px;
+    margin-left: 85px;
+    height: 30px;
+    width: 300px;
+    border: solid white 2px ;
+    border-radius: 10px;
+}
+
+.input-2{
+    background: white;
+    margin-top: 50px;
+    margin-left: 85px;
+    height: 30px;
+    width: 300px;
+    border: solid white 2px ;
+    border-radius: 10px;
+}
+
+.btn_log{
+    margin-left: 160px;
+    margin-top: 40px;
+    width: 150px;
+    height: 35px;
+    background-color: #ffb429;
+    border-radius: 10px;
+    border-style: solid;
+    transition-duration: 0.5s;
+}
+.btn_log:hover{
+    border-color: rgb(37, 37, 37);
+    width: 155px;
+    height: 40px;
+    border-width: 5px;   
 }

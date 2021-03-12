@@ -42,12 +42,12 @@ const Login = ({ logIn }) => {
     }
     
     return (
-        <div className="loginContainer">
-            Soy un login
+        <div className="card">
+            <h1 className="loginTitle">Bienvenido</h1>
             <form onSubmit={handleClick} className="formLogin">
-                <input type="text" name="user" onChange = { e => setUserName(e.target.value) } ></input>
-                <input type="password" name="secret" onChange = { e => setSecret(e.target.value) } ></input>
-                <button> Login </button>
+                <input className="input-1" type="text" name="user" onChange = { e => setUserName(e.target.value) } placeholder="username"></input>
+                <input className="input-2" type="password" name="secret" onChange = { e => setSecret(e.target.value) } placeholder="password"></input>
+                <button className="btn_log"> Login </button>
             </form>
         </div>
     )
