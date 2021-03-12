@@ -2,7 +2,7 @@ const data = [
   {
     id: 1,
     name: 'Ohrensessel Josslyn',
-    price: 499.99,
+    price: 100,
     currency: 'EUR',
     image: 'images/01.jpg',
   },

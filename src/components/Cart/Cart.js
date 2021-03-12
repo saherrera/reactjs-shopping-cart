@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import CartItem from './CartItem';
 
-const Cart = ({ items, total, currency, removeFromCart }) => {
+const Cart = ({ items, total,subtotal, currency, removeFromCart,totalImp }) => {
     return (
         <div>
             <h3>Shopping Cart</h3>
@@ -20,6 +20,8 @@ const Cart = ({ items, total, currency, removeFromCart }) => {
                         {items.length === 0 && (
                             <div className="alert alert-info">Cart is empty</div>
                         )}
+                        <div className="cart__total">SubTotal: {subtotal} {currency}</div>
+                        <div className="cart__total">Impuestos : {totalImp} {currency}</div>
                         <div className="cart__total">Total: {total} {currency}</div>
                     </div>
                 </div>
