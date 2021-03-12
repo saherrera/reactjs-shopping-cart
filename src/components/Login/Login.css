@@ -1,0 +1,11 @@
+.loginContainer {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.formLogin {
+    font-family: sans-serif;
+    text-align: center;
+    justify-content: center;
+}
