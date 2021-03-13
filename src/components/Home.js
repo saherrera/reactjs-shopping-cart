@@ -12,7 +12,7 @@ const Home = ( {user,logOut} ) =>{
         if(user.username === "NO_USER"){
             history.push("/login");
         }
-    }, []);
+    });
 
     const handleClick = () => {
         let userOut = {
